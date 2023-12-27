@@ -1,0 +1,95 @@
+/* NEVIGATION BAR */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1.2em;
+    padding: 0px 10px;
+}
+#navbar img{
+    width: 55px;
+    height: 35px;
+}
+
+
+/* HOME SECTION */
+#home{
+    height: 380px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4em;
+}
+#home::before{
+    height: 500px;
+}
+
+#home p{
+    height: 260px;
+    font-size: 15px;
+}
+
+/*PRODUCTS SECTION */
+#products{
+    flex-direction: column;
+}
+
+#products .box {
+    margin: 1px 3px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#products .box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+/* CLIENT SECTION */
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients img{
+    padding: 0px 10px;
+    width: 70px;
+    height: 50px;
+    
+}
+
+/* CONTACT SECTION */
+#contact-box .form-group{
+    width: 70%;
+}
+#contact-box{
+    padding-bottom: 10px;
+}
+#contact-box label{
+    font-size: 1rem;
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: .1rem;
+    border-radius: 2px;
+}
+.btn {
+    background-color: rgb(201, 195, 195);
+    margin: 1px 10px;
+}
+
+footer {
+    padding: 2px 10px;
+    font-size: .8em;
+}
+
+/* UTILITY */
+.h-primary{
+    font-size: 25px;
+    padding: 36px 10px;
+}
+
+.h-secondary {
+    font-size: 1.1rem;
+    padding: 10px 10px;
+}

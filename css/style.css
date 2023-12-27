@@ -1,0 +1,222 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* css variable */
+:root {}
+
+/* navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: -webkit-fill-available;
+    /* width: 100%; */
+    
+}
+
+#navbar::before {
+    content: "";
+    /* background-color: grey; */
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+    top: 0px;
+    left: 0px;
+}
+
+/* Navigation bar: Logo and image */
+#logo {
+    margin: 7px 25px;
+}
+
+#logo img {
+    width: 85px;
+    height: 65px;
+}
+
+/* Navigation bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 4px 20px;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 20px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*Home Section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+}
+
+#home::before {
+    content: "";
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+}
+
+#home p {
+    font-family: 'Baloo Bhai 2', cursive;
+    ;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/*Products Section*/
+#products {
+    margin: -20px 30px;
+    display: flex;
+    
+}
+
+#products .box {
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: #f1f0f0;
+    margin: 35px 6px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+#products .box img {
+    height: 170px;
+    margin: auto;
+    display: block;
+}
+
+#products .box p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*CLIENTS SECTION*/
+#client-section {
+    position: relative;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+#clients img {
+    height: 70px;
+    width: 130px;
+    margin: 0px 20px;
+}
+
+/*CONTACT SECTION*/
+#contact {
+    position: relative;
+    margin-top: 5rem;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .8;
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    
+}
+
+#contact-box .form-group{
+    width: 40%;
+}
+
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 6px;
+}
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    width: -webkit-fill-available;
+}
+
+
+/* Utility classes*/
+.h-primary {
+    font-size: 2.4rem;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.h-secondary {
+    font-size: 1.6rem;
+    padding: 20px 20px;
+}
+
+.button{
+    display: flex;
+}
+.btn {
+    background-color: rgb(201, 195, 195);
+    margin: 8px 80px;
+}
+.center {
+    text-align: center;
+}
